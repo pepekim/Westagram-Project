@@ -1,0 +1,50 @@
+.CommentComponent {
+  .new_comment {
+    display: flex;
+    justify-content: flex-start;
+
+    p {
+      height: 30px;
+      width: 100%;
+      margin-left: 10px;
+      font-weight: bold;
+
+      span {
+        height: 30px;
+        width: 100%;
+        margin-left: 10px;
+        font-weight: normal;
+      }
+
+      more {
+        color: #bbb;
+        margin-left: 10px;
+      }
+
+      delete {
+        margin-left: 10px;
+        color: red;
+        cursor: pointer;
+
+        &:hover {
+          font-size: 13px;
+        }
+      }
+    }
+    .heart_container {
+      position: relative;
+      margin-right: 30px;
+
+      .heart_img {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+
+        &:hover {
+          animation: heart-beat 0.5s linear infinite alternate;
+        }
+      }
+    }
+  }
+}
